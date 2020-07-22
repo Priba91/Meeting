@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Light.ttf">
+            <string>SFUIText-Light</string>
+        </array>
+        <array key="SFUIText-Medium.ttf">
+            <string>SFUIText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="303" id="KGk-i7-Jjw" customClass="ItemSettingsTableViewCell" customModule="ZoneMaster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="303"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="303"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0L-2b-38K">
+                        <rect key="frame" x="32" y="25" width="256" height="16"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFy-8g-LSU">
+                        <rect key="frame" x="32" y="250" width="256" height="21"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="13"/>
+                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SPG-a2-cQT">
+                        <rect key="frame" x="32" y="57" width="256" height="177"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="177" id="HRW-uv-bwm"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs7-Bz-rFo">
+                        <rect key="frame" x="135" y="120.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Men-CM-jng"/>
+                            <constraint firstAttribute="width" constant="50" id="cpB-VA-YZx"/>
+                        </constraints>
+                        <state key="normal" image="play_icon"/>
+                        <connections>
+                            <action selector="playAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qdf-9U-7Ug"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nq0-42-qmw">
+                        <rect key="frame" x="32" y="250" width="256" height="37"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="k0L-2b-38K" secondAttribute="trailing" constant="32" id="2L4-Lb-A8z"/>
+                    <constraint firstItem="nq0-42-qmw" firstAttribute="bottom" secondItem="tFy-8g-LSU" secondAttribute="bottom" constant="16" id="2Xh-Zh-XaJ"/>
+                    <constraint firstItem="SPG-a2-cQT" firstAttribute="leading" secondItem="k0L-2b-38K" secondAttribute="leading" id="7Ze-jL-e2R"/>
+                    <constraint firstItem="Bs7-Bz-rFo" firstAttribute="centerY" secondItem="SPG-a2-cQT" secondAttribute="centerY" id="HnL-Rp-rl8"/>
+                    <constraint firstItem="SPG-a2-cQT" firstAttribute="trailing" secondItem="k0L-2b-38K" secondAttribute="trailing" id="OhU-jK-isu"/>
+                    <constraint firstAttribute="bottom" secondItem="tFy-8g-LSU" secondAttribute="bottom" constant="32" id="PtC-8Z-9XL"/>
+                    <constraint firstItem="nq0-42-qmw" firstAttribute="top" secondItem="tFy-8g-LSU" secondAttribute="top" id="R79-Cp-wL1"/>
+                    <constraint firstItem="tFy-8g-LSU" firstAttribute="top" secondItem="SPG-a2-cQT" secondAttribute="bottom" constant="16" id="See-YV-vuw"/>
+                    <constraint firstItem="SPG-a2-cQT" firstAttribute="top" secondItem="k0L-2b-38K" secondAttribute="bottom" constant="16" id="Wrs-80-DaZ"/>
+                    <constraint firstItem="Bs7-Bz-rFo" firstAttribute="centerX" secondItem="SPG-a2-cQT" secondAttribute="centerX" id="baF-2w-9Ob"/>
+                    <constraint firstItem="nq0-42-qmw" firstAttribute="leading" secondItem="tFy-8g-LSU" secondAttribute="leading" id="bdT-xf-YvM"/>
+                    <constraint firstItem="tFy-8g-LSU" firstAttribute="trailing" secondItem="k0L-2b-38K" secondAttribute="trailing" id="bkx-4b-Nbq"/>
+                    <constraint firstItem="nq0-42-qmw" firstAttribute="trailing" secondItem="tFy-8g-LSU" secondAttribute="trailing" id="efS-74-sXF"/>
+                    <constraint firstItem="k0L-2b-38K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="f60-rQ-1DE"/>
+                    <constraint firstItem="k0L-2b-38K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="fgH-tP-qIV"/>
+                    <constraint firstItem="tFy-8g-LSU" firstAttribute="leading" secondItem="k0L-2b-38K" secondAttribute="leading" id="w6M-wz-NdC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomTitle" destination="Wrs-80-DaZ" id="oBv-Zt-e7l"/>
+                <outlet property="descLabel" destination="tFy-8g-LSU" id="aED-lv-NKc"/>
+                <outlet property="descTextView" destination="nq0-42-qmw" id="Naf-f1-DTC"/>
+                <outlet property="heightImage" destination="HRW-uv-bwm" id="r1Q-YA-glW"/>
+                <outlet property="itemImageView" destination="SPG-a2-cQT" id="HtM-KL-q9c"/>
+                <outlet property="playButton" destination="Bs7-Bz-rFo" id="IH8-Ja-PVK"/>
+                <outlet property="titleLabel" destination="k0L-2b-38K" id="ML5-aV-6xR"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="166.40625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play_icon" width="50" height="50"/>
+    </resources>
+</document>
