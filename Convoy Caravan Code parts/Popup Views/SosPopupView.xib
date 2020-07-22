@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SosPopup" id="Ir1-fj-Wje" customClass="SosPopup">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.34999999403953552" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiF-K2-RDw">
+                    <rect key="frame" x="0.0" y="-100" width="414" height="1096"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uv4-xT-pMx">
+                    <rect key="frame" x="57" y="288.5" width="300" height="319"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sosIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1Zm-GR-B0j">
+                            <rect key="frame" x="130" y="16" width="40" height="40"/>
+                            <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="7Be-kM-nHj"/>
+                                <constraint firstAttribute="width" constant="40" id="uiH-mN-4it"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifi-8e-3R9">
+                            <rect key="frame" x="16" y="253" width="268" height="50"/>
+                            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="zYt-fp-exB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <state key="normal" title="Resend Email">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="reportBtnAction:" destination="Ir1-fj-Wje" eventType="touchUpInside" id="LGk-7J-g5T"/>
+                                <action selector="sendSosBtnAction:" destination="Ir1-fj-Wje" eventType="touchUpInside" id="O23-ax-y6y"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report coment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGR-vo-mL5">
+                            <rect key="frame" x="20" y="59" width="260" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="0dx-p2-xau"/>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="pyg-Cq-cpu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sXU-sT-k8C">
+                            <rect key="frame" x="20" y="107" width="260" height="130"/>
+                            <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="130" id="EGJ-aa-Pr0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="sXU-sT-k8C" secondAttribute="trailing" constant="20" id="9UP-36-yhf"/>
+                        <constraint firstItem="ifi-8e-3R9" firstAttribute="top" secondItem="sXU-sT-k8C" secondAttribute="bottom" constant="16" id="F1y-dX-p6H"/>
+                        <constraint firstItem="ifi-8e-3R9" firstAttribute="leading" secondItem="uv4-xT-pMx" secondAttribute="leading" constant="16" id="JIC-xz-O0s"/>
+                        <constraint firstAttribute="width" constant="300" id="Qt0-NE-xut"/>
+                        <constraint firstAttribute="bottom" secondItem="ifi-8e-3R9" secondAttribute="bottom" constant="16" id="ViW-Ao-fHz"/>
+                        <constraint firstItem="1Zm-GR-B0j" firstAttribute="top" secondItem="uv4-xT-pMx" secondAttribute="top" constant="16" id="b0O-Ro-hqF"/>
+                        <constraint firstItem="mGR-vo-mL5" firstAttribute="top" secondItem="1Zm-GR-B0j" secondAttribute="bottom" constant="3" id="dmQ-N4-Ws3"/>
+                        <constraint firstItem="mGR-vo-mL5" firstAttribute="leading" secondItem="uv4-xT-pMx" secondAttribute="leading" constant="20" id="fek-im-ahy"/>
+                        <constraint firstAttribute="trailing" secondItem="ifi-8e-3R9" secondAttribute="trailing" constant="16" id="i3B-dt-Ozm"/>
+                        <constraint firstItem="1Zm-GR-B0j" firstAttribute="centerX" secondItem="uv4-xT-pMx" secondAttribute="centerX" id="kZW-Ho-bcK"/>
+                        <constraint firstItem="sXU-sT-k8C" firstAttribute="top" secondItem="mGR-vo-mL5" secondAttribute="bottom" constant="8" id="r2g-Ld-6PA"/>
+                        <constraint firstAttribute="trailing" secondItem="mGR-vo-mL5" secondAttribute="trailing" constant="20" id="z47-Ys-OFe"/>
+                        <constraint firstItem="sXU-sT-k8C" firstAttribute="leading" secondItem="uv4-xT-pMx" secondAttribute="leading" constant="20" id="zvo-fx-zMV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uv4-xT-pMx" firstAttribute="centerX" secondItem="Ir1-fj-Wje" secondAttribute="centerX" id="KNe-dE-UOK"/>
+                <constraint firstItem="uv4-xT-pMx" firstAttribute="centerY" secondItem="Ir1-fj-Wje" secondAttribute="centerY" id="aUz-ch-Txn"/>
+                <constraint firstItem="SiF-K2-RDw" firstAttribute="bottom" secondItem="Ir1-fj-Wje" secondAttribute="bottom" constant="100" id="bL4-98-GJ0"/>
+                <constraint firstItem="SiF-K2-RDw" firstAttribute="leading" secondItem="Ir1-fj-Wje" secondAttribute="leading" id="cGn-9L-Ukm"/>
+                <constraint firstItem="SiF-K2-RDw" firstAttribute="trailing" secondItem="Ir1-fj-Wje" secondAttribute="trailing" id="iKt-HW-9gu"/>
+                <constraint firstItem="SiF-K2-RDw" firstAttribute="top" secondItem="Ir1-fj-Wje" secondAttribute="top" constant="-100" id="uO2-eb-bbp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="AnO-ee-JgV"/>
+            <connections>
+                <outlet property="backView" destination="uv4-xT-pMx" id="IxX-Fw-gm7"/>
+                <outlet property="backgroundView" destination="SiF-K2-RDw" id="ew5-PL-tDn"/>
+                <outlet property="messageLbl" destination="mGR-vo-mL5" id="tkM-l2-Qt4"/>
+                <outlet property="messageTextView" destination="sXU-sT-k8C" id="PLP-qo-XXR"/>
+                <outlet property="sendSosBtn" destination="ifi-8e-3R9" id="zn4-Ar-GPT"/>
+                <outlet property="sosIconImageView" destination="1Zm-GR-B0j" id="lV3-iH-t7K"/>
+            </connections>
+            <point key="canvasLocation" x="33.333333333333336" y="52.901785714285715"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sosIcon" width="30" height="30"/>
+    </resources>
+</document>
